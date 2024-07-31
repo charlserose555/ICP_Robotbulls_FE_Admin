@@ -1,4 +1,4 @@
-import auth from "../../../routes/general/auth";
+import auth from "../../../routes/admin/auth";
 import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 
 const AuthLayout = () => {

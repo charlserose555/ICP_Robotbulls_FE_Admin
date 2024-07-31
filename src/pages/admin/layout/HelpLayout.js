@@ -1,5 +1,5 @@
 import { useSelector } from "../../../store";
-import auth from "../../../routes/general/help";
+import auth from "../../../routes/admin/help";
 import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 
 const HelpLayout = () => {
