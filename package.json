@@ -105,7 +105,7 @@
     "tailwind:dev": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
     "tailwind:watch": "tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css --watch",
     "tailwind:build": "cross-env NODE_ENV=production postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
-    "start": "concurrently \"npm run tailwind:watch\" \"cross-env PORT=3005 react-app-rewired start&&HTTPS=true\" ",
+    "start": "concurrently \"npm run tailwind:watch\" \"cross-env PORT=3003 react-app-rewired start&&HTTPS=true\" ",
     "prebuild": "npm run tailwind:dev",
     "build": "react-app-rewired build",
     "cz": "git-cz",

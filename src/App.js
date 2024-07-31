@@ -19,12 +19,10 @@ import { authenticateSockets } from "./utils/socket";
 import { NumberFix } from "./utils/format";
 import alert from "./utils/Alert";
 
-const Layout = lazy(() => import("./pages/general/layout/Layout"));
+const ModalLayout = lazy(() => import("./pages/admin/modal/ModalLayout"))
 const AdminLayout = lazy(() => import("./pages/admin/layout/Layout"));
-
-const ModalLayout = lazy(() => import("./pages/general/modal/ModalLayout"))
-const AuthLayout = lazy(() => import("./pages/general/layout/AuthLayout"));
-const HelpLayout = lazy(() => import("./pages/general/layout/HelpLayout"));
+const AuthLayout = lazy(() => import("./pages/admin/layout/AuthLayout"));
+const HelpLayout = lazy(() => import("./pages/admin/layout/HelpLayout"));
 
 require("flowbite/dist/flowbite.js");
 
@@ -46,8 +44,6 @@ function App() {
       <ModalLayout/>
       <Switch>
         {/* Place new routes over this */}
-        <Route index path="/app" component={Layout} />
-
         <Route index path="/admin" component={AdminLayout} />
 
         <Route index path="/auth" component={AuthLayout} />
