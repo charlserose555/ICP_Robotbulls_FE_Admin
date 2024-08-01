@@ -136,3 +136,33 @@ export const isReferredByOptions = [
     { value: "Yes", label: "Yes" },
     { value: "No", label: "No" }
 ];
+
+export const bonusTypeOptions = [
+    { value: "For All Transactions", label: "For All Transactions" },
+    { value: "Max 1 Transactions", label: "Max 1 Transactions" },
+    { value: "Max 2 Transactions", label: "Max 2 Transactions" },
+    { value: "Max 3 Transactions", label: "Max 3 Transactions" },
+    { value: "Max 4 Transactions", label: "Max 4 Transactions" },
+    { value: "Max 5 Transactions", label: "Max 5 Transactions" },
+    { value: "Max 10 Transactions", label: "Max 10 Transactions" }
+]
+
+export const offeringTypeOptions = [
+    { value: "Percentage", label: "Percentage" },
+    { value: "Fixed/Fiat", label: "Fixed/Fiat" }
+]
+
+export const referralBonusOptions = [
+    { value: "For All Transactions", label: "Percentage" },
+    { value: "Max 5,000 Tokens", label: "Max 5,000 Tokens" },
+    { value: "Max 10,000 Tokens", label: "Max 10,000 Tokens" },
+    { value: "Max 25,000 Tokens", label: "Max 25,000 Tokens" },
+    { value: "Max 50,000 Tokens", label: "Max 50,000 Tokens" },
+    { value: "Max 75,000 Tokens", label: "Max 75,000 Tokens" },
+    { value: "Max 100,000 Tokens", label: "Max 100,000 Tokens" },
+    { value: "Max 250,000 Tokens", label: "Max 250,000 Tokens" },
+    { value: "Max 1,000,000 Tokens", label: "Max 1,000,000 Tokens" },
+    { value: "Max 5,000,000 Tokens", label: "Max 5,000,000 Tokens" },
+    { value: "Max 10,000,000 Tokens", label: "Max 10,000,000 Tokens" },
+    { value: "Max 100,000,000 Tokens", label: "Max 100,000,000 Tokens" }
+]
