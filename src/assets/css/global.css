@@ -657,3 +657,22 @@ input[type="range"] {
     display: block;
   }
   
+  .stage-card:hover {
+    box-shadow: 0 5px 15px rgba(24, 30, 43, 0.1)
+  }
+
+  .payment-label {
+    position: absolute;
+    color: #fff;
+    background: #bc69fb;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 30px 22px 7px 20px;
+    height: 51px;
+    width: 100px;
+    transform: rotate(-45deg);
+    left: -34px;
+    top: -9px;
+    text-transform: uppercase;
+    text-align: center;
+  }

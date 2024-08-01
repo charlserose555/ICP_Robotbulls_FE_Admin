@@ -8,6 +8,7 @@ const colors = {
   gray: {
     '50': '#f9fafb',
     '80': '#eef2f8',
+    "60": "#f5f9fd",
     '70': '#e6effb',
     '90': "#f7fafd",
     '95': "#758698",

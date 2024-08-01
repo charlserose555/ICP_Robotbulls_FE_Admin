@@ -205,5 +205,5 @@ module.exports = windmill({
     },
   },
   plugins: [require('tailwindcss')({ watch: true })],
-  content: ["./node_modules/flowbite/**/*{.js, jsx}", "src/**/*.{js, jsx}"]});
+  content: ["./node_modules/flowbite/**/*{.js, jsx}", "src/**/*.{js, jsx}", "./node_modules/react-tailwindcss-select/dist/index.esm.js"]});
 

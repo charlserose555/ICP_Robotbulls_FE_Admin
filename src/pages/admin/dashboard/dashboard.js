@@ -45,7 +45,7 @@ function dashboard() {
   return (
     <>
       <div className="justify-center container w-full pb-8">        
-        <div className="grid flex-col w-full grid-cols-1 lg:grid-cols-3 mb-8 mt-4 gap-[30px]">
+        <div className="grid flex-col w-full grid-cols-1 lg:grid-cols-3 mb-8 gap-[30px]">
             <div className="col-span-1 lg:col-span-2 grid w-full">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px]">
                     <div className="hidden md:block col-span-1 mg:col-span-1 lg:col-span-1 flex w-full">
