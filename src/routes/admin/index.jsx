@@ -13,6 +13,7 @@ const icoStage = lazy(() => import("../../pages/admin/settings/icoStage"));
 const paymentMethods = lazy(() => import("../../pages/admin/settings/paymentMethods"));
 const language = lazy(() => import("../../pages/admin/settings/language"));
 const referralSetting = lazy(() => import("../../pages/admin/settings/referralSetting"));
+const webSite = lazy(() => import("../../pages/admin/settings/webSite"));
 
 const routes = [
     {
@@ -74,6 +75,10 @@ const routes = [
     {
         path: "/settings/referral",
         component: referralSetting,
+    },
+    {
+        path: "/settings/webSite",
+        component: webSite,
     }
 ];
 

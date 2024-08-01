@@ -99,7 +99,7 @@ const routes = [
         icon: "allGame.png",
       },
       {
-        path: "/admin/invest/plan",
+        path: "/admin/settings/webSite",
         name: "Website Setting",
         icon: "allGame.png",
       },
