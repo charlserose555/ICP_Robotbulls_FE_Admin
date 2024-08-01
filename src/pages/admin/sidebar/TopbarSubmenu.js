@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { NavLink, Route } from "react-router-dom";
 import * as Icons from "../../../icons";
 import { Transition } from "@windmill/react-ui";
@@ -40,9 +40,10 @@ function TopbarSubmenu({ route }) {
     <>
     {/* <nav className="desktop-nav"> */}
       <ul className="navli relative rounded-2 gap-4 h-full justify-center items-center flex" key={route.name} onClick={() => handleDropdownMenuClick()}>
-        <a className={`${location.pathname === `${route.path}` || location.pathname.startsWith(`${route.groupPath}`) ? "parent-navlink-active cursor-pointer" : "cursor-pointer parent-navlink inline-flex gap-1 rounded-2 py-45 items-center w-full text-darkblue-550 h-full"}`}>
+        <a className={`cursor-pointer inline-flex gap-1 rounded-2 py-45 items-center w-full text-darkblue-550 h-full ${location.pathname === `${route.path}` || location.pathname.startsWith(`${route.path}`) ? "parent-navlink-active" : "parent-navlink"}`}>
           <span className="nav-border absolute inset-x-0 left-0 bottom-0 h-[2px] rounded-tl-2 rounded-bl-2"></span>
-          <span className="leading-20 text-[14px] text-darkblue-550">{`${route.name}`}</span>
+          <span className="leading-20 text-[14px] text-darkblue-550 pr-1">{`${route.name}`}</span>
+          <Icons.DropDownIcon/>
         </a>
 
         <ul className={`dropdown${isVisible ? " show" : ""}`} 
@@ -54,6 +55,9 @@ function TopbarSubmenu({ route }) {
               <NavLink
                   exact
                   to={`${route.path}`}
+                  isActive={(match, location) =>
+                    location.pathname === `${route.path}` || location.pathname.startsWith(`${route.path}`)
+                  }
                   className="text-darkblue-750 inline-flex text-[13px] whitespace-nowrap cursor-pointer w-full h-full py-3 px-8 hover:bg-gray-100">
                   <Route path={`${route.path}`}/>
                   <span className="text-darkblue-750 text-[13px] inline-flex whitespace-nowrap">{`${route.name}`}</span>

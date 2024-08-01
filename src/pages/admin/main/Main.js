@@ -16,7 +16,7 @@ function Main({ children }) {
   return (
     <div className="h-full relative">     
       <div className="w-full mt-[66px] h-[56px] z-40">
-        <div className="w-full h-full flex bg-white hidden md:block" style={{boxShadow:"0 1px 3px rgba(24, 30, 43, 0.07)"}}>
+        <div className="w-full h-full flex bg-white hidden md:block" style={{boxShadow:"0 5px 15px rgba(24, 30, 43, 0.1)"}}>
           <div className="w-full h-full container flex justify-between bg-white items-center mb-[50px]">
             <ul className="flex flex-row h-full gap-8 items-center menus">
               {routes.map((route) =>
@@ -46,17 +46,15 @@ function Main({ children }) {
           </div>
         </div>
         <div className="pt-12">
-          <div className="container flex gap-4 flex-col">
+          <div className="container flex gap-4 flex-col pb-4">
             <a className="text-14 py-3 px-4 hover:bg-coral-400 transition-all durtaion-500 ease text-white font-medium bg-coral-550 rounded-2 flex justify-between items-center"
-                style={{textAlign: 'center', cursor: 'pointer'}}
-                onClick={() => {history.push("/app/kyc/description")}}>
-                <p className='text-white font-medium text-[13px]'>Important: Please setup at least one payment method to active your sale.</p>
+                style={{textAlign: 'center', cursor: 'pointer'}}>
+                <p className='text-white text-start font-medium text-[13px]'>Important: Please setup at least one payment method to active your sale.</p>
                 <NextArrowIcon/>
             </a>
             <a className="text-14 py-3 px-4 hover:bg-yellow-850 hover:text-white transition-all durtaion-500 ease text-yellow-880 font-medium bg-yellow-250 rounded-2 flex justify-between items-center"
-                style={{textAlign: 'center', cursor: 'pointer'}}
-                onClick={() => {history.push("/app/kyc/description")}}>
-                <p className='font-medium text-[13px]'>Important: Please setup at least one payment method to active your sale.</p>
+                style={{textAlign: 'center', cursor: 'pointer'}}>
+                <p className='font-medium text-start text-[13px]'>Please setup your application mail settings</p>
                 <NextArrowIcon/>
             </a>
           </div>
