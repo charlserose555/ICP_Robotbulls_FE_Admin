@@ -25,6 +25,7 @@ function website() {
     const [adminThemeType, setAdminThemeType] = useState({ value: "Default", label: "Default" });
     const [userThemeType, setUserThemeType] = useState({ value: "Default", label: "Default" });
     const [pageLayoutType, setPageLayoutType] = useState({ value: "Default", label: "Default" });
+
     const [checked, setChecked] = useState(false)
 
     const [type, setType] = useState("site info");
