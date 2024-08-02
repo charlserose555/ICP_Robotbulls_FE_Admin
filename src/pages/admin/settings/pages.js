@@ -95,7 +95,7 @@ function pages() {
                                     Welcome block
                                 </td>
                                 <td className="py-4 text-center">
-                                    <div className="rounded-8 bg-gray-200 text-gray-600 w-8 h-8 flex justify-center items-center cursor-pointer">
+                                    <div className="rounded-8 bg-gray-200 text-gray-600 w-8 h-8 flex justify-center items-center cursor-pointer" onClick={() => {history.push("/admin/settings/edit")}}>
                                         <EditIcon/>
                                     </div>
                                 </td>

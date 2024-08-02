@@ -17,6 +17,7 @@ const webSite = lazy(() => import("../../pages/admin/settings/webSite"));
 const icoSetting = lazy(() => import("../../pages/admin/settings/icoSetting"));
 const email = lazy(() => import("../../pages/admin/settings/email"));
 const pages = lazy(() => import("../../pages/admin/settings/pages"));
+const edit = lazy(() => import("../../pages/admin/settings/edit"));
 
 const routes = [
     {
@@ -94,6 +95,10 @@ const routes = [
     {
         path: "/settings/pages",
         component: pages,
+    },
+    {
+        path: "/settings/edit",
+        component: edit,
     }
 ];
 

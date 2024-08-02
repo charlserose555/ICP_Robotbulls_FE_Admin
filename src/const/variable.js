@@ -159,6 +159,11 @@ export const walletSettingOptions = [
     { value: "PancakeSwap", label: "PancakeSwap" }
 ]
 
+export const visibilityOptions = [
+    { value: "Hide", label: "Hide" },
+    { value: "Show", label: "Show" }
+];
+
 export const tokenPriceOptions = [
     { value: "ETH", label: "USD->ETH" },
     { value: "GBP", label: "USD->GBP" },
