@@ -16,6 +16,7 @@ const referralSetting = lazy(() => import("../../pages/admin/settings/referralSe
 const webSite = lazy(() => import("../../pages/admin/settings/webSite"));
 const icoSetting = lazy(() => import("../../pages/admin/settings/icoSetting"));
 const email = lazy(() => import("../../pages/admin/settings/email"));
+const pages = lazy(() => import("../../pages/admin/settings/pages"));
 
 const routes = [
     {
@@ -89,6 +90,10 @@ const routes = [
     {
         path: "/settings/email",
         component: email,
+    },
+    {
+        path: "/settings/pages",
+        component: pages,
     }
 ];
 

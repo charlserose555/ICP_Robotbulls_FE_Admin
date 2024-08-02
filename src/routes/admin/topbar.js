@@ -119,7 +119,7 @@ const routes = [
         icon: "allGame.png",
       },
       {
-        path: "/admin/invest/plan",
+        path: "/admin/settings/pages",
         name: "Manage Pages",
         icon: "allGame.png",
       },
