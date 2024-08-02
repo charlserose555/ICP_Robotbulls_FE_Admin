@@ -43,7 +43,9 @@ function paymentMethods() {
                     <div className="flex justify-end">        
                         <div className="flex flex-row justify-end gap-4 ">
                             <div className="py-1.5 px-2 text-darkblue-550 h-full rounded-2 w-full flex-wrap flex row justify-center gap-1 items-center" 
-                                style={{border: '2px solid #2c80ff', textAlign: 'center', cursor: 'pointer'}} onClick={() => clear()}>
+                                style={{border: '1px solid #2c80ff', textAlign: 'center', cursor: 'pointer'}}             
+                                onClick={() => { dispatch(ShowModal("manageCurrency"))}}>
+
                                 <CashIcon/>
                                 <a className="font-medium text-darkblue-550 text-[13px]">Manage Currency</a>
                             </div>

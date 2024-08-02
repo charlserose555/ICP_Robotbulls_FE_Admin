@@ -27,7 +27,7 @@ function WalletAddressModal() {
                             style={{boxShadow:"0 5px 10px rgba(24, 30, 43, 0.17)"}}>
                             <ModalCloseIcon/>
                         </div>
-                        <p className="text-darkblue-850 font-roboto font-bold text-18 leading-22">Wallet Address</p>
+                        <p className="text-gray-800 uppercase font-roboto font-bold text-18 leading-22">Wallet Address</p>
                         <p className="text-gray-800 font-roboto font-normal text-14">In order to withdraw your funds, please select your wallet address.</p>
                         <div className="w-full flex flex-col gap-2">
                             <span className="text-gray-600 text-14 font-semibold">

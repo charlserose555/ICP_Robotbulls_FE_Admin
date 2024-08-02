@@ -65,11 +65,13 @@ function trnx() {
         <div className="flex flex-col justify-start items-center w-full h-full p-6 rounded-2 bg-white">
             <div className="flex flex-row w-full justify-between">
                 <span className="text-darkblue-900 col-span-8 flex items-center justify-center text-[20px] font-medium px-1">Expiring Transactions</span>
-                <a className="text-14 w-36 px-2 mx-2 py-1 fill-btn-continue text-white font-medium bg-darkblue-550 rounded-2 flex flex-row flex-wrap justify-around gap-45 items-center"
+                <a className="text-14 w-32 px-2 mx-2 py-2 fill-btn-continue text-white font-medium bg-darkblue-550 rounded-2 flex flex-row flex-wrap justify-around gap-45 items-center"
                     style={{textAlign: 'center', cursor: 'pointer'}}
-                    onClick={() => { history.push("/app/dashboard")}}>
-                    <AddFundsIcon/>
-                    <p className='text-white font-medium text-14 hidden md:block'>Add Funds</p>
+                    onClick={() => { dispatch(ShowModal("addFunds"))}}>
+                    <div className="hidden md:block">
+                        <AddFundsIcon/>
+                    </div>
+                    <p className='text-white font-medium text-14'>Add Funds</p>
                 </a>
             </div>
             <div className="rounded-2 bg-gray-60 w-full mt-5" style={{border: '1px solid #f4f5f7'}}>

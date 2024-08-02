@@ -1,14 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import { SidebarContext } from "../../../context/SidebarContext";
 import { ActivitiesMenuIcon, ActivityIcon, AddFundsIcon, ArrowNextIcon, AvatarIcon, BigDatabaseIcon, CloseIcon, DatabaseIcon, EmailMenuIcon, KycIcon, KycRoundedIcon, KycRoundIcon, LogoutIcon, MessageMenuIcon, MoreIcon, NextArrowIcon, NoteMenuIcon, OptionIcon, PastMsgMenuIcon, ProfileIcon, ReferralMenuIcon, RefreshIcon, RemoveIcon, ResetPassMenuIcon, RoundedCheckIcon, SearchIcon, SearchRoundIcon, SettingIcon, SuspendMenuIcon, TransactionsMenuIcon, UserMenuIcon } from "../../../icons";
 import { Avatar} from "@windmill/react-ui";
 import { useDispatch, useSelector } from "../../../store";
-import { Logout, SetBalances, UpdateBalances } from "../../../store/reducers/auth";
 import { Menu } from '@headlessui/react';
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { ShowModal } from "../../../store/reducers/menu";
 require("flowbite/dist/flowbite.js");
-import { CircularProgressbarWithChildren  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Select from "react-tailwindcss-select";
 import { currencyOptions, progressAmountType, purchaseType, tokenPriceOptions, walletMultipleOptions, walletSettingOptions } from "../../../const/variable";

@@ -54,12 +54,12 @@ function userList() {
                     <div className="flex justify-end">
                         <div className="flex flex-row justify-end gap-4 ">
                             <div className="py-1 px-2 text-darkblue-550 h-full rounded-2 w-full flex-wrap flex row justify-center gap-1 items-center" 
-                            style={{border: '2px solid #2c80ff', textAlign: 'center', cursor: 'pointer'}} onClick={() => clear()}>
+                            style={{border: '1px solid #2c80ff', textAlign: 'center', cursor: 'pointer'}} onClick={() => clear()}>
                             <a className="font-medium text-darkblue-550 text-[14px]">Wallet Change Request</a></div>
                         </div>
-                        <a className="text-14 w-32 px-2 mx-2 py-1 fill-btn-continue text-white font-medium bg-darkblue-550 rounded-2 flex flex-row flex-wrap justify-around gap-45 items-center"
+                        <a className="text-14 w-32 px-2 mx-2 py-2 fill-btn-continue text-white font-medium bg-darkblue-550 rounded-2 flex flex-row flex-wrap justify-around gap-45 items-center"
                             style={{textAlign: 'center', cursor: 'pointer'}}
-                            onClick={() => { history.push("/app/dashboard")}}>
+                            onClick={() => { dispatch(ShowModal("addNewUser"))}}>
                             <div className="hidden md:block">
                                 <AddFundsIcon/>
                             </div>
