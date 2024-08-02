@@ -8,6 +8,7 @@ const kycList = lazy(() => import("../../pages/admin/manage/kycList"));
 const walletChange = lazy(() => import("../../pages/admin/manage/walletChange"));
 const ambassadors = lazy(() => import("../../pages/admin/manage/ambassadors"));
 const userList = lazy(() => import("../../pages/admin/search/userList"));
+const wallets = lazy(() => import("../../pages/admin/search/wallets"));
 const activities = lazy(() => import("../../pages/admin/analytics/activities"));
 const icoStage = lazy(() => import("../../pages/admin/settings/icoStage"));
 const paymentMethods = lazy(() => import("../../pages/admin/settings/paymentMethods"));
@@ -16,6 +17,8 @@ const referralSetting = lazy(() => import("../../pages/admin/settings/referralSe
 const webSite = lazy(() => import("../../pages/admin/settings/webSite"));
 const icoSetting = lazy(() => import("../../pages/admin/settings/icoSetting"));
 const email = lazy(() => import("../../pages/admin/settings/email"));
+const pages = lazy(() => import("../../pages/admin/settings/pages"));
+const edit = lazy(() => import("../../pages/admin/settings/edit"));
 
 const routes = [
     {
@@ -48,11 +51,11 @@ const routes = [
     },
     {
         path: "/search/transactions",
-        component: userList,
+        component: trnx,
     },
     {
         path: "/search/wallets",
-        component: userList,
+        component: wallets,
     },
     {
         path: "/analytics/activities",
@@ -89,6 +92,14 @@ const routes = [
     {
         path: "/settings/email",
         component: email,
+    },
+    {
+        path: "/settings/pages",
+        component: pages,
+    },
+    {
+        path: "/settings/edit",
+        component: edit,
     }
 ];
 

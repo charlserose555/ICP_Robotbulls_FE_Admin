@@ -205,5 +205,7 @@ module.exports = windmill({
     },
   },
   plugins: [require('tailwindcss')({ watch: true })],
-  content: ["./node_modules/flowbite/**/*{.js, jsx}", "src/**/*.{js, jsx}", "./node_modules/react-tailwindcss-select/dist/index.esm.js"]});
+  content: ["./node_modules/flowbite/**/*{.js, jsx}", "src/**/*.{js, jsx}", 
+    "./node_modules/react-tailwindcss-select/dist/index.esm.js",
+  "./node_modules/tailwind-datepicker-react/dist/**/*.js"]});
 

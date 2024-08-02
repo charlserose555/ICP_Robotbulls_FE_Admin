@@ -327,7 +327,7 @@ input[type="checkbox"].form-checkbox:checked + svg {
 }
 
 .modal-content {
-    background: transparent;
+    background: white;
     border-radius: 8px;
     max-height: 90%; 
     overflow-y: auto; /* Enables vertical scrolling if content overflows */

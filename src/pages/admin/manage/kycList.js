@@ -46,9 +46,17 @@ function kycList() {
   return (
     <>
       <div className="flex h-full flex-col container justify-center items-center">
-        <div className="flex flex-col justify-start items-center w-full h-full p-5 rounded-2 bg-white">
+        <div className="flex flex-col justify-start items-center w-full h-full p-6 rounded-2 bg-white">
             <div className="flex flex-row w-full justify-between">
                 <span className="text-darkblue-900 col-span-8 flex items-center justify-center text-[20px] font-medium px-1">Pending KYC Application</span>
+                <a className="text-14 w-42 px-2 mx-2 py-2 fill-btn-continue text-white font-medium bg-darkblue-550 rounded-2 flex flex-row flex-wrap justify-around gap-45 items-center"
+                    style={{textAlign: 'center', cursor: 'pointer'}}
+                    onClick={() => { dispatch(ShowModal("addBonus"))}}>
+                    <div className="hidden md:block">
+                        <SettingIcon/>
+                    </div>
+                    <p className='text-white font-medium text-14'>KYC Form Settings</p>
+                </a>
             </div>
             <div className="rounded-2 bg-gray-60 w-full mt-5" style={{border: '1px solid #f4f5f7'}}>
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-2">

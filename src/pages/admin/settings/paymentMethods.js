@@ -37,13 +37,15 @@ function paymentMethods() {
     return (
         <>
         <div className="flex h-full flex-col container justify-center items-center">
-            <div className="flex flex-col justify-start items-center w-full h-full p-5 rounded-2 bg-white gap-6">
+            <div className="flex flex-col justify-start items-center w-full h-full p-6 rounded-2 bg-white gap-6">
                 <div className="flex flex-col md:flex-row w-full justify-between gap-1">
                     <span className="text-gray-800 col-span-8 flex items-start justify-start text-[20px] font-semibold px-1">Payment Methods</span>
                     <div className="flex justify-end">        
                         <div className="flex flex-row justify-end gap-4 ">
                             <div className="py-1.5 px-2 text-darkblue-550 h-full rounded-2 w-full flex-wrap flex row justify-center gap-1 items-center" 
-                                style={{border: '2px solid #2c80ff', textAlign: 'center', cursor: 'pointer'}} onClick={() => clear()}>
+                                style={{border: '1px solid #2c80ff', textAlign: 'center', cursor: 'pointer'}}             
+                                onClick={() => { dispatch(ShowModal("manageCurrency"))}}>
+
                                 <CashIcon/>
                                 <a className="font-medium text-darkblue-550 text-[13px]">Manage Currency</a>
                             </div>
