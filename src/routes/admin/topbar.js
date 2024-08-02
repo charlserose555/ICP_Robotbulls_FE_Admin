@@ -109,7 +109,7 @@ const routes = [
         icon: "allGame.png",
       },
       {
-        path: "/admin/invest/plan",
+        path: "/admin/settings/email",
         name: "Mailing Setting",
         icon: "allGame.png",
       },
@@ -125,6 +125,11 @@ const routes = [
       },
       {
         path: "/admin/settings/language",
+        name: "Manage Languages",
+        icon: "allGame.png",
+      },
+      {
+        path: "/admin/settings/ico-setting",
         name: "Manage Languages",
         icon: "allGame.png",
       }
