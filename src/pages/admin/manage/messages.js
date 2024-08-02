@@ -51,7 +51,7 @@ function message() {
   return (
     <>
       <div className="flex h-full flex-col container justify-center items-center">
-        <div className="flex flex-col justify-start items-center w-full h-full p-5 rounded-2 bg-white">
+        <div className="flex flex-col justify-start items-center w-full h-full p-6 rounded-2 bg-white">
             <div className="flex flex-row w-full justify-between">
                 <span className="text-darkblue-900 col-span-8 flex items-center justify-center text-[20px] font-medium px-1">All Messages</span>
             </div>

@@ -37,7 +37,7 @@ function paymentMethods() {
     return (
         <>
         <div className="flex h-full flex-col container justify-center items-center">
-            <div className="flex flex-col justify-start items-center w-full h-full p-5 rounded-2 bg-white gap-6">
+            <div className="flex flex-col justify-start items-center w-full h-full p-6 rounded-2 bg-white gap-6">
                 <div className="flex flex-col md:flex-row w-full justify-between gap-1">
                     <span className="text-gray-800 col-span-8 flex items-start justify-start text-[20px] font-semibold px-1">Payment Methods</span>
                     <div className="flex justify-end">        

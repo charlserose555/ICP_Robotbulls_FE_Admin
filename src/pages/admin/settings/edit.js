@@ -69,7 +69,7 @@ function edit() {
                         value={"Thank you for your interest in our Artificial Intelligence investment Robot"}
                         type="text"/>
                     </div>
-                    <div className="flex flex-col w-full gap-2">
+                    <div className="flex flex-col w-full gap-2 text-gray-700">
                         <p className="text-gray-700 text-[14px] font-normal">Page Content
                         </p>
                         <Trumbowyg
